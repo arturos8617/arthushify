@@ -74,3 +74,37 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/*Badge*/
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+}
+
+.badge-small {
+  font-size: 1.6rem;
+}
+
+.badge-body-color {
+  background-color: #00d9ff;
+  color: white;
+}
+.badge-normal-color {
+  background-color: #02cdf1;
+  color: white;
+}
+.badge-popular-color {
+  background-color: #126de4;
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge-small {
+    font-size: 1.2rem;
+  }
+}
