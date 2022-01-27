@@ -82,6 +82,7 @@ a {
   font-weight: 600;
   padding: 0.5rem 2rem;
   white-space: nowrap;
+  color: white;
 }
 
 .badge-small {
@@ -90,15 +91,12 @@ a {
 
 .badge-body-color {
   background-color: #00d9ff;
-  color: white;
 }
 .badge-normal-color {
   background-color: #02cdf1;
-  color: white;
 }
 .badge-popular-color {
   background-color: #126de4;
-  color: white;
 }
 @media screen and (min-width: 1024px) {
   .badge {
@@ -106,5 +104,30 @@ a {
   }
   .badge-small {
     font-size: 1.2rem;
+  }
+}
+
+/*List*/
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list-inline .list_item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list-tick {
+  list-style-image: url(../images/tick.svg);
+  margin-left: 3rem;
+}
+.list-tick .list_item {
+  padding-left: 10rem;
+}
+@media screen and (min-width: 1024px) {
+  .list-tick .list_item {
+    padding-left: 0;
   }
 }
