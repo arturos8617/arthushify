@@ -433,3 +433,43 @@ a {
     margin-left: 60px;
   }
 }
+/*Callouts*/
+.callout {
+  background-color: #2584ff;
+  color: white;
+  border-radius: 7px;
+  text-align: center;
+  padding: 2.9rem 2.3rem;
+}
+
+.callout_title {
+  color: white;
+}
+.callout_button {
+  font-size: 1.7rem;
+  padding-left: 8.9rem;
+  padding-right: 8.9rem;
+  justify-self: center;
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .callout {
+    flex-direction: row;
+  }
+  .callout_text {
+    text-align: left;
+  }
+  .callout_title {
+    font-size: 4rem;
+  }
+  .callout_button {
+    padding: 3rem 8rem;
+    margin-left: 60px;
+    margin-right: 20px;
+    white-space: nowrap;
+  }
+
+  .callout .grid--cols-2 {
+    grid-template-columns: 1fr auto;
+  }
+}
