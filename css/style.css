@@ -473,3 +473,29 @@ a {
     grid-template-columns: 1fr auto;
   }
 }
+/*Collapsible*/
+.collapsible_header {
+  display: flex;
+  justify-content: space-between;
+}
+.collapsible_heading {
+  margin: 0;
+  font-size: 3rem;
+}
+.collapsible_chevron {
+  transform: rotate(-90deg);
+  transition: transform 0.5s;
+}
+.collapsible_content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s, opacity 0.5s;
+}
+.collapsible--expanded .collapsible_chevron {
+  transform: rotate(0);
+}
+.collapsible--expanded .collapsible_content {
+  max-height: 100vh;
+  opacity: 1;
+}
