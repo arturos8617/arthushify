@@ -22,13 +22,13 @@ body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: var(--color-body);
   font-size: 2.4rem;
-  line-height: 1.5;
 }
 h1,
 h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 0.6rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -174,7 +174,9 @@ a {
   padding: 2rem 3rem;
   text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
 }
+
 .button-accent {
   background-color: var(--color-accent);
   color: white;
@@ -185,6 +187,12 @@ a {
 .button-secondary {
   background-color: var(--color-secondary);
   color: white;
+}
+.button .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 10px;
+  vertical-align: middle;
 }
 .button-secondary:hover {
   background: #00bcdd;
@@ -235,7 +243,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .input-group button {
   margin: 4px;
@@ -521,7 +529,7 @@ a {
 }
 
 .block-skewed-left {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  padding-bottom: calc(var(--padding-vertical) + 6rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 .block__header {
@@ -594,5 +602,47 @@ a {
   .nav-bar-list_item {
     border: 0;
     font-size: 1.6rem;
+  }
+}
+/*Hero*/
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+.hero_tagline {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #b9c3cf;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+}
+.hero_banner {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero_content {
+    align-self: center;
+  }
+  .hero_banner {
+    align-self: center;
+  }
+}
+/*Domain*/
+.block-domain .input-group {
+  box-shadow: 0px 0px 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem 0;
+}
+.block-domain-prices {
+  display: grid;
+  grid-template-rows: repeat(2, 6rem);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (min-width: 768px) {
+  .block-domain-prices {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
 }
