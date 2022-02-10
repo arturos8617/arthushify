@@ -653,3 +653,33 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }
+
+/*Block Card*/
+.block-card .grid {
+  gap: 8rem 4rem;
+}
+
+.block-card .plan {
+  max-width: 500px;
+}
+.block-card .plan.plan--popular {
+  transition: transform 0.5s;
+}
+.block-card .plan.plan--popular:hover {
+  transform: scale(1.15);
+}
+.block-card .plan {
+  transition: transform 0.2s ease-out;
+}
+.block-card .plan:hover {
+  transform: scale(1.05);
+}
+@media screen and (min-width: 1024px) {
+  .block-card {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .block-card .plan.plan--popular {
+    transform: scale(1.1);
+  }
+}
