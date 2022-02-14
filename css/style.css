@@ -709,4 +709,7 @@ a {
   .block-font:nth-of-type(even) .information-block {
     order: 2;
   }
+  .information-block {
+    font-size: 1.8rem;
+  }
 }
