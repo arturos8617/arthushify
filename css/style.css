@@ -150,6 +150,9 @@ a {
 .icon--white {
   fill: white;
 }
+.icon--primary-color {
+  fill: var(--color-primary);
+}
 .icon-container {
   display: inline-flex;
   height: 60px;
@@ -681,5 +684,29 @@ a {
   }
   .block-card .plan.plan--popular {
     transform: scale(1.1);
+  }
+}
+
+/*Featured block*/
+.block-font-image {
+  width: 100%;
+}
+.block-font {
+  gap: 4rem 2rem;
+  max-width: 1140px;
+  margin: 12rem auto;
+}
+.block-font-header {
+  margin-top: 0 1rem;
+}
+.information-block {
+  line-height: 1.5;
+}
+.block-font:first-of-type {
+  margin-top: 6rem;
+}
+@media screen and (min-width: 768px) {
+  .block-font:nth-of-type(even) .information-block {
+    order: 2;
   }
 }
