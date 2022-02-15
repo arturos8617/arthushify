@@ -16,92 +16,53 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="block feature-block">
-      <header class="block__header container">
-        <h2>Host on the cloud to keep growing</h2>
+    <section class="block">
+      <header class="block__header">
+        <h2>What our Customer are Saying</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-          obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+          recusandae.
         </p>
       </header>
-      <article class="grid grid--cols-2 block-font">
-        <div class="information-block">
-          <span class="icon-container">
-            <svg class="icon icon--primary-color">
-              <use xlink:href="/icons/sprite.svg#easy"></use>
-            </svg>
-          </span>
-          <h3 class="block-font-header">Super Easy to Use</h3>
-          <p class="block-font-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
-          </p>
-          <a href="#" class="link-arrow">Learn More</a>
+      <div class="card testimonial">
+        <div class="grid grid--cols-2">
+          <div class="image_container">
+            <img
+              class="testimonial_image"
+              src="/images/testimonial.jpg"
+              alt=""
+            />
+            <span
+              class="icon-container icon-container-accent testimonial_icon_container"
+            >
+              <svg class="icon icon--white testimonial_icon">
+                <use xlink:href="/icons/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+          <blockquote class="quote">
+            <p class="quote_text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+              accumsan lacus vel facilisis.
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image quote_image">
+                  <svg class="icon icon--primary quote-icon-line">
+                    <use xlink:href="/icons/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media_title quote_author">John Smith</h3>
+                  <p class="media_text quote_organization">ABC company</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
         </div>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="/images/easy@1x.webp 1x, /images/easy@2x.webp 2x"
-          />
-          <source
-            type="image/jpg"
-            srcset="/images/easy@1x.jpg 1x, /images/easy@2x.jpg 2x"
-          />
-          <img class="block-font-image" src="/images/easy.jpg" alt="" />
-        </picture>
-      </article>
-      <article class="grid grid--cols-2 block-font">
-        <div class="information-block">
-          <span class="icon-container">
-            <svg class="icon icon--primary-color">
-              <use xlink:href="/icons/sprite.svg#computer"></use>
-            </svg>
-          </span>
-          <h3 class="block-font-header">Super Easy to Use</h3>
-          <p class="block-font-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
-          </p>
-          <a href="#" class="link-arrow">Learn More</a>
-        </div>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="/images/fast@1x.webp 1x, /images/fast@2x.webp 2x"
-          />
-          <source
-            type="image/jpg"
-            srcset="/images/fast@1x.jpg 1x, /images/fast@2x.jpg 2x"
-          />
-          <img class="block-font-image" src="/images/fast.jpg" alt="" />
-        </picture>
-      </article>
-      <article class="grid grid--cols-2 block-font">
-        <div class="information-block">
-          <span class="icon-container">
-            <svg class="icon icon--primary-color">
-              <use xlink:href="/icons/sprite.svg#wordpress"></use>
-            </svg>
-          </span>
-          <h3 class="block-font-header">Super Easy to Use</h3>
-          <p class="block-font-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            obcaecati vel ad unde est illo at. Labore excepturi officia dolores!
-          </p>
-          <a href="#" class="link-arrow">Learn More</a>
-        </div>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="/images/support@1x.webp 1x, /images/support@2x.webp 2x"
-          />
-          <source
-            type="image/jpg"
-            srcset="/images/support@1x.jpg 1x, /images/support@2x.jpg 2x"
-          />
-          <img class="block-font-image" src="/images/easy.jpg" alt="" />
-        </picture>
-      </article>
+      </div>
     </section>
     <script src="js/main.js"></script>
   </body>
