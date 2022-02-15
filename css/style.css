@@ -543,6 +543,7 @@ a {
 }
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 .container {
   max-width: 1140px;
@@ -714,9 +715,7 @@ a {
 .showcase-image {
   width: 100%;
 }
-.showcase-header {
-  margin-bottom: 4.5rem;
-}
+
 .showcase-media {
   margin-bottom: 3rem;
 }
