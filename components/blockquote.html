@@ -6,10 +6,14 @@
       recusandae.
     </p>
   </header>
-  <div class="card testimonial">
+  <div class="container card testimonial">
     <div class="grid grid--cols-2">
       <div class="image_container">
-        <img class="testimonial_image" src="/images/testimonial.jpg" alt="" />
+        <picture>
+          <source type="image/webp" srcset="/images/testimonial.webp" />
+          <source type="image/jpg" srcset="/images/testimonial.jpg" />
+          <img class="testimonial_image" src="/images/testimonial.jpg" alt="" />
+        </picture>
         <span
           class="icon-container icon-container-accent testimonial_icon_container"
         >
