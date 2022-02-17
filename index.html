@@ -15,59 +15,78 @@
 
     <title>Document</title>
   </head>
+
   <body>
-    <section class="block">
-      <header class="block__header">
-        <h2>What our Customer are Saying</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
-          recusandae.
-        </p>
-      </header>
-      <div class="container card testimonial">
-        <div class="grid grid--cols-2">
-          <div class="image_container">
-            <picture>
-              <source type="image/webp" srcset="/images/testimonial.webp" />
-              <source type="image/jpg" srcset="/images/testimonial.jpg" />
-              <img
-                class="testimonial_image"
-                src="/images/testimonial.jpg"
-                alt=""
-              />
-            </picture>
-            <span
-              class="icon-container icon-container-accent testimonial_icon_container"
-            >
-              <svg class="icon icon--white testimonial_icon">
-                <use xlink:href="/icons/sprite.svg#quotes"></use>
-              </svg>
-            </span>
-          </div>
-          <blockquote class="quote">
-            <p class="quote_text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
-            </p>
-            <footer>
-              <div class="media">
-                <div class="media__image quote_image">
-                  <svg class="icon icon--primary quote-icon-line">
-                    <use xlink:href="/icons/sprite.svg#line"></use>
-                  </svg>
-                </div>
-                <div class="media__body">
-                  <h3 class="media_title quote_author">John Smith</h3>
-                  <p class="media_text quote_organization">ABC company</p>
-                </div>
-              </div>
-            </footer>
-          </blockquote>
+    <footer class="block footer_block">
+      <div class="container grid footer_sections">
+        <div class="footer-logo">
+          <img class="footer-image" src="/images/logo.png" alt="" />
+          <p>Copyright 2020 Mosh Hamedani</p>
         </div>
+        <section class="footer_section collapsible collapsible--expanded">
+          <div class="collapsible_header">
+            <h2 class="collapsible_heading">PRODUCTS</h2>
+            <svg class="icon icon--primary collapsible_chevron">
+              <use xlink:href="/icons/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+          <div class="collapsible_content">
+            <ul class="list">
+              <li class="list-item"><a href="">Website Hosting</a></li>
+              <li class="list-item">
+                <a href="">Free Automated Wordpress</a>
+              </li>
+              <li class="list-item"><a href="">Migrations</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer_section collapsible">
+          <header class="collapsible_header">
+            <h2 class="collapsible_heading">COMPANY</h2>
+            <svg class="icon icon--primary collapsible_chevron">
+              <use xlink:href="/icons/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible_content">
+            <ul class="list">
+              <li class="list-item"><a href="">About</a></li>
+              <li class="list-item"><a href="">Affiliates</a></li>
+              <li class="list-item"><a href="">Blog</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer_section collapsible">
+          <header class="collapsible_header">
+            <h2 class="collapsible_heading">SUPPORT</h2>
+            <svg class="icon icon--primary collapsible_chevron">
+              <use xlink:href="/icons/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible_content">
+            <ul class="list">
+              <li class="list-item"><a href="">Contact</a></li>
+              <li class="list-item"><a href="">Knowledge Base</a></li>
+              <li class="list-item"><a href="">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="footer_section collapsible">
+          <header class="collapsible_header">
+            <h2 class="collapsible_heading">DOMAINS</h2>
+            <svg class="icon icon--primary collapsible_chevron">
+              <use xlink:href="/icons/sprite.svg#chevron"></use>
+            </svg>
+          </header>
+          <div class="collapsible_content">
+            <ul class="list">
+              <li class="list-item"><a href="">Domain Checker</a></li>
+              <li class="list-item"><a href="">Domain Transfer</a></li>
+              <li class="list-item"><a href="">Free Domain </a></li>
+            </ul>
+          </div>
+        </section>
+        <script src="js/main.js"></script>
       </div>
-    </section>
-    <script src="js/main.js"></script>
+    </footer>
   </body>
 </html>
