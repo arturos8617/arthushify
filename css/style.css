@@ -234,7 +234,6 @@ a {
   font-size: 2rem;
   outline: 0;
   padding: 1.5rem 3.5rem;
-  overflow: hidden;
 }
 ::placeholder {
   color: #cdcbd7;
@@ -253,10 +252,13 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
+  width: 0;
 }
 .input-group button {
   margin: 4px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 /*Card*/
@@ -315,7 +317,7 @@ a {
   width: 40px;
   display: inline-block;
   position: absolute;
-  right: 8%;
+  right: 8px;
   top: -6px;
 }
 
@@ -457,9 +459,11 @@ a {
   border-radius: 7px;
   text-align: center;
   padding: 2.9rem 2.3rem;
+  transform: translateY(5rem);
 }
 
 .callout_title {
+  margin-top: 0;
   color: white;
 }
 .callout_button {
@@ -468,6 +472,9 @@ a {
   padding-right: 8.9rem;
   justify-self: center;
   align-self: center;
+}
+.callout_text {
+  line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
   .callout {
@@ -556,7 +563,9 @@ a {
 }
 
 /*Hero*/
-
+.hero {
+  text-align: center;
+}
 .hero_tagline {
   font-size: 2rem;
   letter-spacing: 1px;
@@ -587,10 +596,10 @@ a {
   max-width: 600px;
 }
 .block-domain-prices {
+  color: var(--color-headings);
   display: grid;
   grid-template-rows: repeat(2, 6rem);
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
@@ -771,7 +780,7 @@ a {
 }
 .nav--toggler {
   opacity: 1;
-  border-radius: 5px;
+  border-radius: 7px;
   transition: opacity 0.3s, box-shadow 0.3s;
   box-shadow: 0 0 0 3px #666;
   cursor: pointer;
@@ -779,6 +788,7 @@ a {
 .nav-bar.collapsible--expanded .nav--toggler {
   opacity: 0.5;
   box-shadow: none;
+  border-radius: 0;
 }
 @media screen and (min-width: 768px) {
   .nav--toggler {
